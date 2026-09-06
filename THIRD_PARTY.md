@@ -1,0 +1,11 @@
+# Third-party materials
+
+This private project's original source has not been assigned a public redistribution license. Third-party components retain their own licenses and notices.
+
+- **KiCad community libraries:** selected standard footprints and STEP models are copied into `hardware/AirMon.pretty` and `hardware/models`. Local model paths were changed; the custom PMSA003I supplied-socket footprint/model and simple SHT40 envelope are project-generated. KiCad libraries use CC BY-SA 4.0 with the electronic-design exception. The upstream [license document](hardware/licenses/KiCad-LICENSE.md) and [KiCad policy](https://www.kicad.org/libraries/license/) explain the distinction between design use and library redistribution. Original STEP headers/footprint descriptions are retained.
+- **Adafruit Industries:** PMSA003I, SCD4x, and SGP41 public reference PCB designs were consulted for mechanical and connector dimensions. Upstream URLs and exact commits appear in [the manifest](hardware/references/manifest.json). Those reference repositories use [CC BY-SA 3.0](hardware/licenses/Adafruit-CC-BY-SA-3.0.txt). The AirMon schematic/layout is newly generated; vendor display and gas-module illustrations are simplified envelopes, not redistributed vendor board CAD.
+- **Sensirion:** the unmodified floating-point Gas Index Algorithm is vendored in `firmware/components/gas_index`, with [BSD-3-Clause license](firmware/components/gas_index/LICENSE) and [upstream commit](firmware/components/gas_index/UPSTREAM.md).
+- **Espressif ESP-IDF v5.5.1:** Apache-2.0 SDK plus third-party components, including Wi-Fi/PHY libraries, mbedTLS, and cJSON. SDK and managed-component sources are fetched by the documented build workflow rather than committed here.
+- **LVGL 9.2.2:** MIT. **ILI9341 2.0.1** and **mDNS 1.8.2:** see their bundled upstream license files. Dependency versions and hashes are pinned in `firmware/dependencies.lock`.
+
+Copies of the relevant binary dependency licenses are included in [release/firmware/licenses](release/firmware/licenses/). Refer to the pinned SDK source for its complete component notices. Manufacturer datasheets are linked and hashed where downloaded; the original documents are not redistributed in the release package.

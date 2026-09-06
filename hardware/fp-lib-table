@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "AirMon") (type "KiCad") (uri "${KIPRJMOD}/AirMon.pretty") (options "") (descr "Pinned carrier footprints")))

@@ -1,0 +1,63 @@
+{
+  "project": "airmon",
+  "version": "0.1.0",
+  "status": "prototype; physical validation pending",
+  "idf": "v5.5.1",
+  "chip": "esp32",
+  "flash_size": "4MB",
+  "flash_mode": "dio",
+  "flash_frequency": "40m",
+  "ota_partition_bytes": 1966080,
+  "ota_free_bytes": 639920,
+  "files": [
+    {
+      "file": "bootloader.bin",
+      "offset": "0x1000",
+      "size_bytes": 26320,
+      "sha256": "29d058f72718e0f50616fe5c32ff269668ba40a9c73575a9bbd2c278df61b963"
+    },
+    {
+      "file": "partition-table.bin",
+      "offset": "0x8000",
+      "size_bytes": 3072,
+      "sha256": "7e5705bc68776e4406f37fada43e9a88425a6de56c6186ae5e00107ab4d9d51e"
+    },
+    {
+      "file": "ota_data_initial.bin",
+      "offset": "0xf000",
+      "size_bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    {
+      "file": "airmon.bin",
+      "offset": "0x20000",
+      "size_bytes": 1326160,
+      "sha256": "a207fc1d104c6292faf7a6583b16c0d074cfed29820704047f72642bc64c7da2"
+    }
+  ],
+  "source_sha256": {
+    "firmware/CMakeLists.txt": "0a2bed374632aa6912fd77a6bd37d4ff44bf08cd50e8244e0381b1be4a6063fa",
+    "firmware/components/airmon_core/CMakeLists.txt": "b22266662ef0f9cba2193d7568e76013596ac82cf14483ac7705426e0308e5f6",
+    "firmware/components/airmon_core/airmon_core.c": "34ae2ebfeb95277638de10494385892d543fe836c6b6a70a7fe1e78bb415f1e7",
+    "firmware/components/airmon_core/include/airmon_core.h": "df0581a80afa1342dd876478df10fd357d46cecede4834630f3944b7cc77b689",
+    "firmware/components/gas_index/CMakeLists.txt": "f4b71d26d89819c4923f32b37680532d39ea335a90e15c727e6985847a3feedc",
+    "firmware/components/gas_index/LICENSE": "cc5044a3eb590ce7d4f653dae3c282c5d0865bf846e8d6e70ecaaf61099562d1",
+    "firmware/components/gas_index/UPSTREAM.md": "73b0318f4a66329ab74baa70027aa90549ed01f22661942216661d266b2dbc85",
+    "firmware/components/gas_index/sensirion_gas_index_algorithm.c": "5e0d13fa57c559cd6c30b9e991337768f8c8301ce45fb54823163154af064a63",
+    "firmware/components/gas_index/sensirion_gas_index_algorithm.h": "2ae1d51cbd56aff3b2a287cf567618ffb9466e86b2fe0dab168cdeb7aea4dd8c",
+    "firmware/dependencies.lock": "a56e03592cffba35460b79813d3f724d1b65f3568e3b433c31150bdaf6e6bc80",
+    "firmware/main/CMakeLists.txt": "3745d1c01b2abcc094ccab5e7af998c2e908081d110031ec89781eb2c77bc07e",
+    "firmware/main/airmon.h": "a6244b65402588f46653a19f70e054ff3c3613c510cbda44fe97b22fd8aa07c3",
+    "firmware/main/config.c": "74b9aac985f75579625e990289944b829cb9c8561aadd7c2dc1dbd65d4923a4e",
+    "firmware/main/display.c": "aa335446b63c47625bd2927911858e084fd604ddcd85e203ee57f1f459aea5d3",
+    "firmware/main/idf_component.yml": "941b890f6f4eb7e16c433521d5656f43c9071261fe7424ea2b7a32c84be3c8ca",
+    "firmware/main/main.c": "2dd5bf9b61e7bfa2b695a0423b0186859ccae49766cf0d69c2c8cbd547b51121",
+    "firmware/main/network.c": "788edf954508ce750d4a8c83da91ebe4089ebf5eca920bf444392b43444c99b7",
+    "firmware/main/sensors.c": "c6c3df0fe63f989e499d44d3967e8a4d19cc6fac7c2bf3d2890ae1a7c8d90ae1",
+    "firmware/main/web/index.html": "73596e91a05358e2084120ea6b369b1d466b3d0575cc7c2ce9285eb28ac7e75d",
+    "firmware/main/web/index.html.gz": "4c94518344d1763cfc75701f2830cf13011041728a01563ea6800adbe84c7b1a",
+    "firmware/main/web.c": "4086deeae8b2faf9f145610561c12ebe9a637bce0dd0784dd7f7ea872ea2f2df",
+    "firmware/partitions.csv": "4fded3eb96921249432074e2e5581705664c2edb4382bcd46054a44a8d3d8cde",
+    "firmware/sdkconfig.defaults": "ed85387b6c109ff03adba8c7580b042f930f992477ade7353cddc91db7d8d8bc"
+  }
+}

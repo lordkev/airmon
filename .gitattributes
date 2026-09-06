@@ -1,0 +1,16 @@
+# Preserve native/binary engineering deliverables without text normalization.
+*.bin binary
+*.stl binary
+*.step binary
+*.pdf binary
+*.png binary
+*.xlsx binary
+*.zip binary
+*.gz binary
+*.csv text eol=lf
+# Preserve upstream license/source formatting.
+release/firmware/licenses/* -whitespace
+hardware/licenses/* -whitespace
+firmware/components/gas_index/* -whitespace
+# Keep KiCad-generated SVG plot formatting intact.
+hardware/exports/gerbers/*.svg -whitespace

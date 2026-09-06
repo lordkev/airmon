@@ -1,0 +1,93 @@
+[
+  {
+    "file": "enclosure/stl/bezel.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      100.0,
+      82.0,
+      10.0
+    ],
+    "volume_mm3": 16308.965,
+    "removed_roundoff_faces": 12
+  },
+  {
+    "file": "enclosure/stl/fit_test.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 2,
+    "dimensions_mm": [
+      55.0,
+      29.8,
+      5.0
+    ],
+    "volume_mm3": 5909.372,
+    "removed_roundoff_faces": 0
+  },
+  {
+    "file": "enclosure/stl/rear_full.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      100.0,
+      82.0,
+      36.0
+    ],
+    "volume_mm3": 43491.749,
+    "removed_roundoff_faces": 6
+  },
+  {
+    "file": "enclosure/stl/rear_shallow.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      100.0,
+      82.0,
+      22.0
+    ],
+    "volume_mm3": 31290.366,
+    "removed_roundoff_faces": 2
+  },
+  {
+    "file": "enclosure/stl/sensor_mount_full.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      79.0,
+      77.11,
+      18.1
+    ],
+    "volume_mm3": 7894.446,
+    "removed_roundoff_faces": 0
+  },
+  {
+    "file": "enclosure/stl/sensor_mount_shallow.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      79.0,
+      77.0,
+      4.1
+    ],
+    "volume_mm3": 2688.163,
+    "removed_roundoff_faces": 0
+  },
+  {
+    "file": "enclosure/stl/stand.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "dimensions_mm": [
+      108.0,
+      65.0,
+      20.0
+    ],
+    "volume_mm3": 41864.813,
+    "removed_roundoff_faces": 0
+  }
+]

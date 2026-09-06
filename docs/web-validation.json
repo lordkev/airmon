@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "mode": "Actual embedded HTML in headless Chrome; simulated API server",
+  "checks": [
+    "eight metric states",
+    "three-page history",
+    "metric selection",
+    "390px responsive layout",
+    "token required before mutation",
+    "401 handling",
+    "preserve omitted passwords",
+    "explicit password clearing",
+    "offline state",
+    "no uncaught browser errors"
+  ]
+}

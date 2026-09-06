@@ -1,0 +1,66 @@
+{
+  "note": "Native KiCad STEP carrier when available; simplified vendor display and sensor envelopes. Cables, fasteners, and measured board revision require physical validation.",
+  "carrier_model": "KiCad STEP",
+  "checks": [
+    {
+      "a": "carrier",
+      "b": "display",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "carrier",
+      "b": "mount",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "carrier",
+      "b": "rear",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "carrier",
+      "b": "bezel",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "display",
+      "b": "mount",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "display",
+      "b": "rear",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "display",
+      "b": "bezel",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "mount",
+      "b": "rear",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "mount",
+      "b": "bezel",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "rear",
+      "b": "bezel",
+      "overlap_mm3": 0.0,
+      "passed": true
+    }
+  ]
+}

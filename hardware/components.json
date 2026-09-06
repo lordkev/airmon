@@ -1,0 +1,331 @@
+[
+  {
+    "reference": "J1",
+    "value": "5V POWER",
+    "footprint": "JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "x": 26,
+    "y": 42,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "USB5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "J2",
+    "value": "SDA SCL",
+    "footprint": "JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "x": 35,
+    "y": 42,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SDA",
+      "2": "SCL"
+    }
+  },
+  {
+    "reference": "J3",
+    "value": "STEMMA QT",
+    "footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "x": 29,
+    "y": 33,
+    "rotation": 180,
+    "side": "bottom",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR3V3",
+      "3": "SDA",
+      "4": "SCL"
+    }
+  },
+  {
+    "reference": "J4",
+    "value": "STEMMA QT",
+    "footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "x": 38,
+    "y": 33,
+    "rotation": 180,
+    "side": "bottom",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR3V3",
+      "3": "SDA",
+      "4": "SCL"
+    }
+  },
+  {
+    "reference": "J5",
+    "value": "PMSA003I supplied socket",
+    "footprint": "PMSA003I_SuppliedSocket",
+    "x": 9.5,
+    "y": 5.5,
+    "rotation": 0,
+    "side": "top",
+    "nets": {
+      "1": "SENSOR5V",
+      "2": "SENSOR5V",
+      "3": "GND",
+      "4": "GND",
+      "5": "PM_RESET",
+      "7": "SCL",
+      "9": "SDA",
+      "10": "PM_SET"
+    }
+  },
+  {
+    "reference": "U1",
+    "value": "AP2112K-3.3TRG1",
+    "footprint": "SOT-23-5",
+    "x": 17,
+    "y": 37,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR5V",
+      "2": "GND",
+      "3": "SENSOR5V",
+      "5": "SENSOR3V3"
+    }
+  },
+  {
+    "reference": "U2",
+    "value": "SHT40-AD1B-R2",
+    "footprint": "Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad",
+    "x": 5,
+    "y": 52,
+    "rotation": 0,
+    "side": "top",
+    "nets": {
+      "1": "SDA",
+      "2": "SCL",
+      "3": "SENSOR3V3",
+      "4": "GND"
+    }
+  },
+  {
+    "reference": "Q1",
+    "value": "AO3401A",
+    "footprint": "SOT-23",
+    "x": 19,
+    "y": 41,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR5V",
+      "3": "FUSED5V"
+    }
+  },
+  {
+    "reference": "F1",
+    "value": "1206L100/16",
+    "footprint": "Fuse_1206_3216Metric",
+    "x": 25,
+    "y": 28,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "USB5V",
+      "2": "FUSED5V"
+    }
+  },
+  {
+    "reference": "D1",
+    "value": "SMF5.0A",
+    "footprint": "D_SOD-123F",
+    "x": 12,
+    "y": 37,
+    "rotation": 90,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C1",
+    "value": "47uF 10V X5R",
+    "footprint": "C_1210_3225Metric",
+    "x": 8,
+    "y": 29,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C2",
+    "value": "4.7uF 10V X5R",
+    "footprint": "C_0603_1608Metric",
+    "x": 15,
+    "y": 33,
+    "rotation": 90,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C3",
+    "value": "10uF 10V X5R",
+    "footprint": "C_0603_1608Metric",
+    "x": 20,
+    "y": 33,
+    "rotation": 90,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C4",
+    "value": "100nF 10V X7R",
+    "footprint": "C_0603_1608Metric",
+    "x": 8,
+    "y": 49,
+    "rotation": 0,
+    "side": "top",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R1",
+    "value": "4.7k",
+    "footprint": "R_0603_1608Metric",
+    "x": 15,
+    "y": 28,
+    "rotation": 90,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "SDA"
+    }
+  },
+  {
+    "reference": "R2",
+    "value": "4.7k",
+    "footprint": "R_0603_1608Metric",
+    "x": 19,
+    "y": 28,
+    "rotation": 90,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "SCL"
+    }
+  },
+  {
+    "reference": "R3",
+    "value": "10k",
+    "footprint": "R_0603_1608Metric",
+    "x": 7,
+    "y": 15,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "PM_RESET"
+    }
+  },
+  {
+    "reference": "R4",
+    "value": "10k",
+    "footprint": "R_0603_1608Metric",
+    "x": 13,
+    "y": 15,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3",
+      "2": "PM_SET"
+    }
+  },
+  {
+    "reference": "H1",
+    "value": "M2 mount",
+    "footprint": "MountingHole_2.2mm_M2",
+    "x": 17,
+    "y": 45,
+    "rotation": 0,
+    "side": "top",
+    "nets": {}
+  },
+  {
+    "reference": "H2",
+    "value": "M2 mount",
+    "footprint": "MountingHole_2.2mm_M2",
+    "x": 39,
+    "y": 46,
+    "rotation": 0,
+    "side": "top",
+    "nets": {}
+  },
+  {
+    "reference": "TP1",
+    "value": "GND",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "x": 12,
+    "y": 21,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "GND"
+    }
+  },
+  {
+    "reference": "TP2",
+    "value": "SENSOR5V",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "x": 17,
+    "y": 21,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR5V"
+    }
+  },
+  {
+    "reference": "TP3",
+    "value": "SENSOR3V3",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "x": 22,
+    "y": 21,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SENSOR3V3"
+    }
+  },
+  {
+    "reference": "TP4",
+    "value": "SDA",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "x": 27,
+    "y": 21,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SDA"
+    }
+  },
+  {
+    "reference": "TP5",
+    "value": "SCL",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "x": 32,
+    "y": 21,
+    "rotation": 0,
+    "side": "bottom",
+    "nets": {
+      "1": "SCL"
+    }
+  }
+]

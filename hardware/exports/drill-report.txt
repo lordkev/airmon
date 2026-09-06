@@ -1,0 +1,24 @@
+Drill report for airmon.kicad_pcb
+Created on 2026-09-06T13:42:37
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'airmon-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (60 holes))
+    T2  0.750mm  0.0295"  (4 holes))
+
+    Total plated holes count 64
+
+
+Drill file 'airmon-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  2.200mm  0.0866"  (2 holes))
+
+    Total unplated holes count 2

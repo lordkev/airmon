@@ -1,0 +1,438 @@
+{
+  "slicer": "Bambu Studio 02.08.02.61",
+  "profile": "A1 0.4 mm / Generic PLA; reference validation only",
+  "checks": [
+    {
+      "file": "enclosure/stl/bezel.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 187.3245086669922,
+            "Bridge": 14.287723541259766,
+            "Custom": 368.7121887207031,
+            "Flush": 25.0,
+            "Gap infill": 176.9738311767578,
+            "Inner wall": 369.39251708984375,
+            "Internal solid infill": 743.0031127929688,
+            "Outer wall": 349.42559814453125,
+            "Overhang wall": 57.230323791503906,
+            "Sparse infill": 2.2377498149871826,
+            "Top surface": 184.2930145263672,
+            "Travel": 380.4370422363281,
+            "Undefined": 363.5999450683594
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 19.713787078857422,
+              "total_used_g": 19.713787078857422
+            }
+          ],
+          "generate_support_material_time": 16,
+          "id": 1,
+          "infill_time": 82,
+          "layer_filament_change": 0,
+          "main_predication": 2439.591796875,
+          "make_perimeters_time": 74,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 82.0,
+                "height": 10.0,
+                "width": 100.0,
+                "x": 77.99999237060547,
+                "y": 87.00000762939453,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "bezel.stl",
+              "triangle_count": 7688
+            }
+          ],
+          "sliced_time": 437,
+          "sliced_time_with_cache": 239,
+          "total_predication": 2841.466796875,
+          "triangle_count": 7688,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/fit_test.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 50.354148864746094,
+            "Bridge": 34.116825103759766,
+            "Custom": 369.0411376953125,
+            "Flush": 25.0,
+            "Gap infill": 11.427515029907227,
+            "Inner wall": 233.99853515625,
+            "Internal solid infill": 212.79989624023438,
+            "Outer wall": 94.50118255615234,
+            "Sparse infill": 60.487030029296875,
+            "Top surface": 53.47199630737305,
+            "Travel": 167.2142791748047,
+            "Undefined": 150.31930541992188
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 6.0632524490356445,
+              "total_used_g": 6.0632524490356445
+            }
+          ],
+          "generate_support_material_time": 5,
+          "id": 1,
+          "infill_time": 39,
+          "layer_filament_change": 0,
+          "main_predication": 893.3656005859375,
+          "make_perimeters_time": 33,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 29.79999542236328,
+                "height": 5.0,
+                "width": 54.999996185302734,
+                "x": 100.49999237060547,
+                "y": 113.10001373291016,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "fit_test.stl",
+              "triangle_count": 1336
+            }
+          ],
+          "sliced_time": 168,
+          "sliced_time_with_cache": 81,
+          "total_predication": 1295.5118408203125,
+          "triangle_count": 1336,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/rear_full.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 231.23104858398438,
+            "Custom": 369.0400085449219,
+            "Flush": 25.0,
+            "Gap infill": 577.447509765625,
+            "Inner wall": 1439.771728515625,
+            "Internal solid infill": 1053.5145263671875,
+            "Outer wall": 1240.0003662109375,
+            "Overhang wall": 17.967845916748047,
+            "Sparse infill": 1.0019499063491821,
+            "Top surface": 225.9343719482422,
+            "Travel": 1141.9947509765625,
+            "Undefined": 1124.847412109375
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 52.41276168823242,
+              "total_used_g": 52.41276168823242
+            }
+          ],
+          "generate_support_material_time": 58,
+          "id": 1,
+          "infill_time": 79,
+          "layer_filament_change": 0,
+          "main_predication": 5903.154296875,
+          "make_perimeters_time": 268,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 82.0,
+                "height": 36.0,
+                "width": 100.0,
+                "x": 77.99999237060547,
+                "y": 87.00000762939453,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "rear_full.stl",
+              "triangle_count": 8306
+            }
+          ],
+          "sliced_time": 839,
+          "sliced_time_with_cache": 389,
+          "total_predication": 6305.046875,
+          "triangle_count": 8306,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/rear_shallow.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 214.90541076660156,
+            "Custom": 369.0408935546875,
+            "Flush": 25.0,
+            "Gap infill": 337.07232666015625,
+            "Inner wall": 801.4931640625,
+            "Internal solid infill": 1074.1380615234375,
+            "Outer wall": 683.0145263671875,
+            "Overhang wall": 15.926753997802734,
+            "Sparse infill": 0.9999085068702698,
+            "Top surface": 208.10328674316406,
+            "Travel": 674.8569946289062,
+            "Undefined": 657.7101440429688
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 37.729671478271484,
+              "total_used_g": 37.729671478271484
+            }
+          ],
+          "generate_support_material_time": 33,
+          "id": 1,
+          "infill_time": 50,
+          "layer_filament_change": 0,
+          "main_predication": 3985.2685546875,
+          "make_perimeters_time": 156,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 82.0,
+                "height": 22.0,
+                "width": 100.0,
+                "x": 77.99999237060547,
+                "y": 87.00000762939453,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "rear_shallow.stl",
+              "triangle_count": 6474
+            }
+          ],
+          "sliced_time": 524,
+          "sliced_time_with_cache": 257,
+          "total_predication": 4387.16259765625,
+          "triangle_count": 6474,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/sensor_mount_full.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 10.023871421813965,
+            "Custom": 368.7462158203125,
+            "Flush": 25.0,
+            "Gap infill": 135.46971130371094,
+            "Inner wall": 507.7193908691406,
+            "Internal solid infill": 272.85943603515625,
+            "Outer wall": 435.9205017089844,
+            "Overhang wall": 0.6699091792106628,
+            "Top surface": 94.09197235107422,
+            "Travel": 636.2171630859375,
+            "Undefined": 619.333251953125
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 9.488672256469727,
+              "total_used_g": 9.488672256469727
+            }
+          ],
+          "generate_support_material_time": 47,
+          "id": 1,
+          "infill_time": 130,
+          "layer_filament_change": 0,
+          "main_predication": 2067.93115234375,
+          "make_perimeters_time": 201,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 77.11000061035156,
+                "height": 18.100000381469727,
+                "width": 79.0,
+                "x": 88.5,
+                "y": 89.44500732421875,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "sensor_mount_full.stl",
+              "triangle_count": 6524
+            }
+          ],
+          "sliced_time": 779,
+          "sliced_time_with_cache": 339,
+          "total_predication": 2469.79345703125,
+          "triangle_count": 6524,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/sensor_mount_shallow.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 1.0167003870010376,
+            "Custom": 368.65020751953125,
+            "Flush": 25.0,
+            "Gap infill": 42.20158004760742,
+            "Inner wall": 189.08038330078125,
+            "Internal solid infill": 16.873441696166992,
+            "Outer wall": 117.44738006591797,
+            "Top surface": 60.09463119506836,
+            "Travel": 141.40184020996094,
+            "Undefined": 124.52848815917969
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 3.2702815532684326,
+              "total_used_g": 3.2702815532684326
+            }
+          ],
+          "generate_support_material_time": 4,
+          "id": 1,
+          "infill_time": 34,
+          "layer_filament_change": 0,
+          "main_predication": 543.1261596679688,
+          "make_perimeters_time": 21,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 77.0,
+                "height": 4.099999904632568,
+                "width": 79.0,
+                "x": 88.5,
+                "y": 89.50000762939453,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "sensor_mount_shallow.stl",
+              "triangle_count": 2466
+            }
+          ],
+          "sliced_time": 135,
+          "sliced_time_with_cache": 68,
+          "total_predication": 944.903076171875,
+          "triangle_count": 2466,
+          "warning_message": ""
+        }
+      ]
+    },
+    {
+      "file": "enclosure/stl/stand.stl",
+      "return_code": 0,
+      "layer_height_mm": 0.2,
+      "wall_loops": 4,
+      "infill_percent": 15,
+      "supports": false,
+      "plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 185.79782104492188,
+            "Bridge": 294.690185546875,
+            "Custom": 368.89007568359375,
+            "Flush": 25.0,
+            "Gap infill": 59.802207946777344,
+            "Inner wall": 834.3099975585938,
+            "Internal solid infill": 988.293212890625,
+            "Outer wall": 284.3101501464844,
+            "Sparse infill": 417.4209289550781,
+            "Top surface": 268.3758850097656,
+            "Travel": 458.4036865234375,
+            "Undefined": 441.5726013183594
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFL99",
+              "id": 1,
+              "main_used_g": 35.58999252319336,
+              "total_used_g": 35.58999252319336
+            }
+          ],
+          "generate_support_material_time": 2,
+          "id": 1,
+          "infill_time": 95,
+          "layer_filament_change": 0,
+          "main_predication": 3766.5244140625,
+          "make_perimeters_time": 13,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 65.0,
+                "height": 20.0,
+                "width": 108.0,
+                "x": 73.99999237060547,
+                "y": 95.50000762939453,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "stand.stl",
+              "triangle_count": 302
+            }
+          ],
+          "sliced_time": 209,
+          "sliced_time_with_cache": 90,
+          "total_predication": 4168.58349609375,
+          "triangle_count": 302,
+          "warning_message": ""
+        }
+      ]
+    }
+  ]
+}

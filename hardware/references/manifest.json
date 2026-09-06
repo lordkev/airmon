@@ -1,0 +1,77 @@
+{
+  "retrieved_on": "2026-09-06",
+  "note": "Source documents are linked, not redistributed. Purchased revisions require confirmation.",
+  "repositories": [
+    {
+      "name": "esp-idf",
+      "url": "https://github.com/espressif/esp-idf.git",
+      "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83"
+    },
+    {
+      "name": "gas-index-algorithm",
+      "url": "https://github.com/Sensirion/gas-index-algorithm.git",
+      "commit": "2ef9f13d225e8a0dedd3ff42dd229af4dbb1aae4"
+    },
+    {
+      "name": "scd4x-pcb",
+      "url": "https://github.com/adafruit/Adafruit-SCD-4x-PCB.git",
+      "commit": "c83995482b4c830a835caef158e6196a507025b3"
+    },
+    {
+      "name": "sgp41-pcb",
+      "url": "https://github.com/adafruit/Adafruit-SGP41-Gas-Sensor-Breakout-PCB.git",
+      "commit": "9c8e8c6d195e430a3537b0dca20fe7e310ece822"
+    },
+    {
+      "name": "pmsa003i-pcb",
+      "url": "https://github.com/adafruit/Adafruit-PMSA003I-PCB.git",
+      "commit": "15c4cc619a86802bf7076370570ea5ab72ba020f"
+    },
+    {
+      "name": "scd4x-driver",
+      "url": "https://github.com/Sensirion/embedded-i2c-scd4x.git",
+      "commit": "b52cebe1bb1b7050feaac75d7cd33e56c6a8a4e9"
+    },
+    {
+      "name": "sgp41-driver",
+      "url": "https://github.com/Sensirion/embedded-i2c-sgp41.git",
+      "commit": "c9a981ef4a174ae7fbc2ff8b34be5bac3cefdb2b"
+    },
+    {
+      "name": "sht4x-driver",
+      "url": "https://github.com/Sensirion/embedded-i2c-sht4x.git",
+      "commit": "1b6d7148a704618ff5fdedf3b13247f5cdc3f5e5"
+    }
+  ],
+  "documents": [
+    {
+      "name": "display-size.pdf",
+      "url": "https://www.lcdwiki.com/res/E32R28T/E32R28T_Size.pdf",
+      "sha256": "f8ac6fe069cfe71b2b0eb1cad394335b2dd69e46d9cca443c426caa312853107"
+    },
+    {
+      "name": "pmsa003i.pdf",
+      "url": "https://cdn-shop.adafruit.com/product-files/4632/4505_PMSA003I_series_data_manual_English_V2.6.pdf",
+      "sha256": "2740b6bc27cc0aed603e457a74c408ec2032b64b43a12459941389e07b5277f6"
+    }
+  ],
+  "links": [
+    "https://www.keyestudio.com/products/28-inch-esp32-32e-display-screen-lcd-tft-module-with-touch-wroom-for-arduino",
+    "https://www.lcdwiki.com/2.8inch_ESP32-32E_Display",
+    "https://www.lcdwiki.com/res/E32R28T/2.8inch_ESP32-32_Display_Schematic.pdf",
+    "https://sensirion.com/media/documents/33FD6951/6A7C10A0/HT_DS_Datasheet_SHT4x_V7.3.pdf",
+    "https://sensirion.com/media/documents/5FE8673C/61E96F50/Sensirion_Gas_Sensors_Datasheet_SGP41.pdf",
+    "https://sensirion.com/products/catalog/SCD40",
+    "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+    "https://www.adafruit.com/product/4505",
+    "https://www.adafruit.com/product/5187",
+    "https://www.adafruit.com/product/6455"
+  ],
+  "tools": {
+    "kicad": "10.0.6",
+    "openscad": "2026.09.05",
+    "idf": "v5.5.1",
+    "esptool": "4.12.0",
+    "bambu_studio": "02.08.02.61"
+  }
+}

@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "AirMon") (type "KiCad") (uri "${KIPRJMOD}/AirMon.kicad_sym") (options "") (descr "Carrier schematic symbols")))

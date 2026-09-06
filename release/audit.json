@@ -1,0 +1,15 @@
+{
+  "status": "digital prototype audit passed; physical gates pending",
+  "required_files": 32,
+  "render_files": [
+    "assembled-unit.png",
+    "assembled-pcb-underside.png",
+    "assembled-pcb-top.png",
+    "assembled-pcb-with-pm.png",
+    "exploded-assembly.png"
+  ],
+  "gerber_drill_files": 11,
+  "firmware_images": 4,
+  "source_files_hashed": 23,
+  "physical_validation": false
+}
