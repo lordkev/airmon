@@ -6,10 +6,10 @@ Memory Type Usage Summary
 ┃ Memory            ┃              ┃          ┃                ┃               ┃
 ┃ Type/Section      ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
 ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
-│ Flash Code        │       918116 │          │                │               │
-│    .text          │       918116 │          │                │               │
-│ Flash Data        │       291952 │          │                │               │
-│    .rodata        │       291696 │          │                │               │
+│ Flash Code        │       918536 │          │                │               │
+│    .text          │       918536 │          │                │               │
+│ Flash Data        │       292080 │          │                │               │
+│    .rodata        │       291824 │          │                │               │
 │    .appdesc       │          256 │          │                │               │
 │ DRAM              │       146036 │     80.8 │          34700 │        180736 │
 │    .bss           │       129520 │    71.66 │                │               │
@@ -22,7 +22,7 @@ Memory Type Usage Summary
 │    .rtc_slow_rese │           24 │     0.29 │                │               │
 │ rved              │              │          │                │               │
 └───────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
-Total image size: 1326007 bytes (.bin may be padded larger)
+Total image size: 1326555 bytes (.bin may be padded larger)
 Note: The reported total sizes may be smaller than those in the technical
 reference manual due to reserved memory and application configuration. The total
 flash size available for the application is not included by default, as it

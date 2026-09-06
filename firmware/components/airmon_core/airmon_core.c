@@ -7,6 +7,19 @@ const char *const am_units[AM_METRICS] = {"°C", "%", "µg/m³", "µg/m³", "µg
 const char *const am_state_names[5] = {"absent", "warming_up", "valid", "stale", "failed"};
 const int am_scales[AM_METRICS] = {100,100,1,1,1,1,1,1};
 
+bool am_parse_u32(const char *text, uint32_t *out) {
+    if (!text || !*text || !out) return false;
+    uint32_t value=0;
+    for (const char *p=text; *p; p++) {
+        if (*p<'0' || *p>'9') return false;
+        uint32_t digit=(uint32_t)(*p-'0');
+        if (value>(UINT32_MAX-digit)/10) return false;
+        value=value*10+digit;
+    }
+    *out=value;
+    return true;
+}
+
 uint8_t am_crc8(const uint8_t *p, size_t n) {
     uint8_t crc = 0xff;
     for (size_t i=0;i<n;i++) {

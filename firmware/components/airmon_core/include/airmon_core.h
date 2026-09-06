@@ -34,3 +34,5 @@ bool am_reading_current(const am_reading *reading, uint64_t now_ms, uint32_t max
 bool am_touch_calibrate(const float raw[4][2], const float screen[4][2], float affine[6]);
 void am_touch_map(const float affine[6], float raw_x, float raw_y, float *x, float *y);
 bool am_constant_time_equal(const char *a, const char *b, size_t max_length);
+/* Nonempty decimal digits only; rejects signs, suffixes and uint32 overflow. */
+bool am_parse_u32(const char *text, uint32_t *out);

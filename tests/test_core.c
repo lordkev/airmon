@@ -63,4 +63,13 @@ static void touch_and_auth(void) {
     assert(!am_constant_time_equal("","",33));assert(!am_constant_time_equal("abc","abc",3));
     assert(!am_constant_time_equal(NULL,"abc",33));
 }
-int main(void){sensors();history();touch_and_auth();puts("PASS: CRC vectors, 304 corrupt frames, environmental PM, freshness, history averaging/gaps/24h rollover, touch and authentication");}
+static void query_numbers(void) {
+    uint32_t out=37;
+    const char *invalid[]={"","-1","+1"," 1","1 ","1.5","180oops","0x10","nan","4294967296","999999999999999999999999"};
+    for(size_t i=0;i<sizeof(invalid)/sizeof(invalid[0]);i++){assert(!am_parse_u32(invalid[i],&out));assert(out==37);}
+    assert(!am_parse_u32(NULL,&out));assert(!am_parse_u32("1",NULL));
+    assert(am_parse_u32("0",&out)&&out==0);
+    assert(am_parse_u32("000180",&out)&&out==180);
+    assert(am_parse_u32("4294967295",&out)&&out==UINT32_MAX);
+}
+int main(void){sensors();history();touch_and_auth();query_numbers();puts("PASS: CRC vectors, 304 corrupt frames, environmental PM, freshness, history averaging/gaps/24h rollover, touch, authentication and strict query numbers");}

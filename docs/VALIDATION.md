@@ -17,7 +17,7 @@
 | Reference slicing | [slicing-validation.json](../enclosure/slicing-validation.json) | All 7 parts sliced successfully with no slicer warning strings; 0.4 mm nozzle, 0.2 mm layers, 4 walls, 15% gyroid, supports disabled |
 | Documentation renders | [images](images/) and [assembly guide](ASSEMBLY.md) | Native PCB top/underside, PCB with PM, completed enclosure, exploded assembly; CAD/illustrative-screen limitations captioned |
 | ESP32 compilation | [build report](firmware-build.txt), [manifest](../release/firmware/manifest.json) | Successful ESP-IDF v5.5.1 build; about 33% free in each OTA slot; runtime memory/load tests pending |
-| Portable firmware logic | `scripts/test_core.sh` | ASan/UBSan pass: CRC/checksum, corrupt frames, PM field selection, freshness/nulls, history means/gaps/rollover, touch transform, token comparison |
+| Portable firmware logic | `scripts/test_core.sh` | ASan/UBSan pass: CRC/checksum, corrupt frames, PM field selection, freshness/nulls, history means/gaps/rollover, touch transform, token comparison, strict unsigned history-query parsing |
 | Configuration logic | `scripts/test_config.sh` | ASan/UBSan pass using actual config.c with transactional NVS fake: limits, password redaction, credential/touch persistence, failed-commit preservation |
 | Embedded web UI | [web-validation.json](web-validation.json) | 10 checks in isolated Chrome with simulated HTTP API; desktop/mobile layout, pagination, auth errors, password semantics, offline state, no uncaught JS errors |
 
@@ -62,3 +62,9 @@ Record board revision, module revisions, firmware manifest hash, printer/filamen
 | Pending | Pending | Pending | As specified above | Not tested |
 
 The private GitHub repository is `lordkev/airmon`. Commits containing these files are prototype checkpoints, not evidence of physical acceptance.
+
+## Follow-up validation preparation
+
+- History query parsing now rejects malformed decimal values, signed inputs, fractions, overflow, and truncated query strings. Core sanitizer tests cover these boundaries.
+- Touch recalibration requests are transferred atomically to the display task, preventing a concurrent request from being cleared by the consumer. Physical touchscreen validation remains pending.
+- `scripts/test_device_api.py` provides read-only acceptance checks against an actual device. It has not been run against hardware because no ESP32 serial device or AirMon network address is available. Run it after first provisioning and retain its JSON report with the physical test record.

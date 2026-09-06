@@ -2,6 +2,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdatomic.h>
 #include "driver/gpio.h"
 #include "driver/ledc.h"
 #include "driver/spi_master.h"
@@ -20,7 +21,7 @@ static const char *const titles[]={"Temperature","Humidity","PM1","PM2.5","PM10"
 static unsigned page=0,metric=AM_PM25,cal_step;
 static uint64_t last_input;
 static bool calibrating=false,wait_release=false;
-static volatile bool recalibration_requested;
+static atomic_bool recalibration_requested;
 static float calibration_raw[4][2];
 static const float targets[4][2]={{30,30},{290,30},{30,210},{290,210}};
 
@@ -139,7 +140,7 @@ static void ui_task(void *unused) {
     (void)unused;uint64_t previous=am_now(),next_refresh=0,pressed=0;bool long_press=false;last_input=previous;
     for(;;) {
         uint64_t now=am_now();lv_tick_inc(now-previous);previous=now;
-        if(recalibration_requested){recalibration_requested=false;calibrating=true;cal_step=0;wait_release=true;memset(cards,0,sizeof(cards));status_label=chart=chart_label=NULL;draw_calibration();}
+        if(atomic_exchange(&recalibration_requested,false)){calibrating=true;cal_step=0;wait_release=true;memset(cards,0,sizeof(cards));status_label=chart=chart_label=NULL;draw_calibration();}
         if(!gpio_get_level(GPIO_NUM_0)) {
             if(!pressed){pressed=now;long_press=false;}last_input=now;
             if(now-pressed>=5000&&!long_press){long_press=true;am_network_setup();show_page(3);}

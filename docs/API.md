@@ -68,7 +68,7 @@ The response shape is:
 }
 ```
 
-`limit` is 1–180, default 180. `before` is an exclusive unsigned uptime-second boundary, not an epoch time. The latest eligible points are selected and returned oldest-to-newest. To fetch older pages, pass `next_before` as `before` and prepend their points. Stop on an empty/short page or `next_before:null`. Eight full pages cover 1,440 points. A full final page can legitimately require one extra empty request to establish the end.
+`limit` is 1–180, default 180. Both numeric query fields accept decimal digits only; signs, suffixes, fractions, uint32 overflow, and oversized/truncated query strings return `400`. `before` is an exclusive unsigned uptime-second boundary, not an epoch time. The latest eligible points are selected and returned oldest-to-newest. To fetch older pages, pass `next_before` as `before` and prepend their points. Stop on an empty/short page or `next_before:null`. Eight full pages cover 1,440 points. A full final page can legitimately require one extra empty request to establish the end.
 
 Values are minute means of fresh valid samples. The incomplete current minute is omitted. Missing minutes/metrics remain null. UTC may be absent until SNTP succeeds; use uptime for stable ordering. Discard prior pagination state after a device reboot.
 
@@ -127,3 +127,13 @@ curl -X POST http://DEVICE_IP/api/v1/firmware \
 ```
 
 Send a normal Content-Length upload of the application `.bin`, not multipart/form-data or a chunked request. The maximum image size is the inactive slot size, 1,966,080 bytes. Success returns plain text `Firmware validated. Rebooting.` The device reboots shortly afterwards. Invalid/incompatible/incomplete uploads return `400` and keep the current image selected. See [firmware and recovery](FIRMWARE.md) for rollback behavior and pending hardware tests.
+
+## Live acceptance checks
+
+Once a prototype is flashed and reachable, run the read-only checker from the repository root:
+
+```sh
+python3 scripts/test_device_api.py http://DEVICE_IP
+```
+
+It checks real HTTP responses, metric/null/freshness semantics, history pagination, malformed query rejection, redacted configuration, dashboard delivery, and three concurrent readers. The JSON report defaults to `tmp/device-api-validation.json`. It sends no configuration, calibration, or firmware updates. An empty history can pass structural checks; it is not evidence of a 24-hour run. Hardware-dependent tests in the validation ledger remain separate.

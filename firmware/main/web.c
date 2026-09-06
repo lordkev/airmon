@@ -60,10 +60,17 @@ static esp_err_t status(httpd_req_t *r) {
     return json_reply(r,j);
 }
 static esp_err_t history(httpd_req_t *r) {
-    char query[100]={0},value[24];uint32_t before=UINT32_MAX;unsigned limit=180;
-    if(httpd_req_get_url_query_str(r,query,sizeof(query))==ESP_OK) {
-        if(httpd_query_key_value(query,"before",value,sizeof(value))==ESP_OK)before=(uint32_t)strtoul(value,NULL,10);
-        if(httpd_query_key_value(query,"limit",value,sizeof(value))==ESP_OK)limit=(unsigned)strtoul(value,NULL,10);
+    char query[100]={0},value[24];uint32_t before=UINT32_MAX,limit=180;
+    size_t query_length=httpd_req_get_url_query_len(r);
+    if(query_length) {
+        if(query_length>=sizeof(query) || httpd_req_get_url_query_str(r,query,sizeof(query))!=ESP_OK)
+            return error(r,"400 Bad Request","History query is too long or invalid");
+        esp_err_t e=httpd_query_key_value(query,"before",value,sizeof(value));
+        if(e!=ESP_ERR_NOT_FOUND && (e!=ESP_OK || !am_parse_u32(value,&before)))
+            return error(r,"400 Bad Request","before must be unsigned decimal seconds within uint32 range");
+        e=httpd_query_key_value(query,"limit",value,sizeof(value));
+        if(e!=ESP_ERR_NOT_FOUND && (e!=ESP_OK || !am_parse_u32(value,&limit)))
+            return error(r,"400 Bad Request","limit must be decimal digits from 1 to 180");
     }
     if(limit<1||limit>180)return error(r,"400 Bad Request","limit must be 1–180");
     am_history_point *page=malloc(limit*sizeof(*page));if(!page)return error(r,"503 Service Unavailable","Insufficient memory");
